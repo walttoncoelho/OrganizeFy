@@ -16,6 +16,7 @@ flex-direction: column;
 padding: 10px;
 border-radius: 20px;
 margin-left: 40px; 
+text-align: start;
 
 
 h3{

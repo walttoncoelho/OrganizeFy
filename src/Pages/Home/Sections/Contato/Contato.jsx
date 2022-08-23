@@ -38,17 +38,24 @@ export default function Contato() {
 
               <FildForm className='Box'>
                 <form onSubmit={props.handleSubmit}>
-                  <label className='Box1'>Nome:</label>
+                  <label className='Box1 paragraf'><p>Nome:</p></label>
                   <Field className='Field' name='name' type='text' onBlur={props.handleBlur} />
-                  <label className='Box1'>E-mail:</label>
+                  <label className='Box1 paragraf'><p>E-mail:</p></label>
                   <Field className='Field' name='email' type='email' onBlur={props.handleBlur} />
-                  <label className='Box1'>WhatsApp:</label>
-                  <Field className='Field' name='whats' type='number' onBlur={props.handleBlur} />
-                  <label className='Box1'>Cidade:</label>
-                  <Field className='Field' name='cidade' type='text' onBlur={props.handleBlur} />
+                  <div className='ContainerField'>
+                  <div className='GridField'>
+                  <label className='Box1 paragraf'><p>WhatsApp:</p></label>
+                  <Field className='FieldWhats' name='whats' type='number' onBlur={props.handleBlur} />
+                  </div>
+                  <div className='GridField'>
+
+                  <label className='Box1 paragraf'><p>Cidade:</p></label>
+                  <Field className='FieldCidade' name='cidade' type='text' onBlur={props.handleBlur} />
+                  </div>
+                  </div>
                   <br />
                   <Field name='termo' type='radio' onBlur={props.handleBlur} />
-                  <label className='Box1'>Eu aceito os termos de política de privacidade:</label>
+                  <label className='Box1'><p>Eu aceito os termos de política de privacidade:</p></label>
                   <button className='Button' type="submit">Enviar</button>
                 </form>
               </FildForm>
