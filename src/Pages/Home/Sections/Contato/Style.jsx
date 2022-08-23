@@ -8,6 +8,10 @@ export const Container = styled.div`
   height: 650px;
 `;
 
+export const TextField = styled.div`
+
+`;
+
 export const Grid01 = styled.div`
 width: 50%;
 display: flex;
