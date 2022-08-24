@@ -3,15 +3,10 @@ import styled from "styled-components";
 export const Tipograf = styled.div`
   h1 {
     font-style: normal;
-    font-weight: 100;
-    font-size: 3em;
+    font-weight: 300;
+    font-size: 3em;    
     line-height: 64px;
-    letter-spacing: 0.01em;    
-    font-weight: 900;
-    line-height: 64px;
-    letter-spacing: -0.3rem;
-    font-size: 4em;
-    margin-top: 50px;
+    letter-spacing: 0.1rem;
     font-family: 'Roboto', sans-serif;
   }
 

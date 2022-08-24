@@ -8,13 +8,19 @@ export const Container = styled.div`
   max-width: 1920px;
   height: 750px;
   margin-top: -18px;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 
   export const Grid1 = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  width:50%;
+  max-width: 600px;
+  margin-top: 120px;  
+  justify-content: flex-start;
+  margin-left: 100px;
+  
   
 
   h1{
