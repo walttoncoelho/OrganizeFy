@@ -71,7 +71,8 @@ export const Grid1 = styled.nav`
           }
 
           a {
-            width: 100%;
+            width:100%;
+            height: 50px;          
             display: flex;
             margin: auto;
             text-decoration: none;
@@ -79,11 +80,17 @@ export const Grid1 = styled.nav`
             font-size: 1.2rem;
             font-weight: 300;
             transition: 0.2s;
-            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-right: 25px;
+            
             :hover {
                 background-color: #19258f;
                 color: #ececec;
-              }         
+              }      
+              
+              
           
           }
           /* submenu */
@@ -118,7 +125,7 @@ export const Grid1 = styled.nav`
             margin: auto;
             display: flex;
             width: 100%;
-            background-color: #faf6f1;
+           
             border: solid 1px #f3f3f3;
 
             a {
@@ -169,17 +176,17 @@ export const Grid1 = styled.nav`
 `;
 
 export const ColorChild = styled.div `
-background-color: #ececec;
-padding: 2px;
 margin: auto;
 display: flex;
+padding-right: 25px;
+border-right: solid 1px #FF5921;
 
    :last-child {
               background-color: #FF5921;
-              color: #ececec;
-              
-             
-            }
+              a {
+                color: #ececec;        
+              }   
+               }
 `;
 
 export const Grid2 = styled.div`
@@ -228,73 +235,6 @@ export const Grid3 = styled.div`
   align-items: flex-end;
   margin: auto;
 
-  /*   > section {
-    display: flex;
-    margin: auto;
-    gap: 2rem;
-    &:last-child {
-      gap: 1rem;
-    }
-
-    > img {
-      width: 60px;
-      @media (max-width: 200px) {
-        width: 120px;
-      }
-    }
-
-    > nav {
-      display: flex;
-      gap: 1rem;
-
-      a {
-        font-size: 20px;
-        position: relative;
-        text-decoration: none;
-        align-items: center;
-        color: #fff;
-
-        &:before {
-          content: "";
-          border-radius: 50px;
-          bottom: -10px;
-          position: absolute;
-          width: 0%;
-          height: 10px;
-
-          transition: 0.3s;
-        }
-
-        &:hover {
-          &:before {
-            width: 100%;
-          }
-        }
-      }
-    }
-    .mobile {
-      display: none;
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .mobile {
-        display: initial;
-      }
-      > nav {
-        display: none;
-      }
-    }
-
-    font-size: 18px;
-    position: relative;
-    text-decoration: none;
-    align-items: center;
-    color: #fff;
-  } */
 
   @media (max-width: 700px) {
     padding: 14.5px 16px;

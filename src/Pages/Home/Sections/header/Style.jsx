@@ -7,6 +7,7 @@ export const Container = styled.div`
   background-image: url(./images/header/BgHeader.jpg);
   max-width: 1920px;
   height: 750px;
+  margin-top: -18px;
 `;
 
   export const Grid1 = styled.div`
