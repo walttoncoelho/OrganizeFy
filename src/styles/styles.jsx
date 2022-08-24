@@ -31,7 +31,7 @@ export const Tipograf = styled.div`
 
   h4 {
     text-align: center;    
-    font-weight: 900;
+    font-weight: 600;
     line-height: 20px;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;

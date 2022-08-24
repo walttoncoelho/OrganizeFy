@@ -57,8 +57,9 @@ export const CardStyle = styled.div`
     width: 80px;
     margin: auto;
     box-shadow: #110808;
-    border: solid 2px #f3f3f36e;
-    border-radius: 100%;
+    /* border: solid 2px #f3f3f36e;
+    border-radius: 100%; */
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.25));
     
   }
 

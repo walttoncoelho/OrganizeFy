@@ -7,10 +7,11 @@ export const Container = styled.div`
   padding: 20px;  
   flex-wrap: wrap;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 
   >:hover{
-    background-color: #d9d9da;
-
+    background-color: #f5f5f5;
   }
 `;
 
@@ -18,9 +19,7 @@ export const Section = styled.div`
 display: flex;
 margin: auto;
 flex-direction: column;
-max-width: 1440px;
-
-
+max-width: 1444px;
 
 h3{
   display: flex;
@@ -28,36 +27,49 @@ h3{
   color: #1B6DC6;
   margin-top: -10px;
   margin-left: 20px;
-}
-  
+}  
 `;
 
 export const CardStyle = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #F1F1F1;
-  max-width: 260px;
+  max-width: 310px;
   min-height: 300px;
-  padding: 2rem;
-  margin:2px;
-  border-radius: 5px;
-
-
+  margin: 9px;
+  border-radius: 5px;  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   
-
   h4{
-    color: #0451A4
+    display: flex;
+    margin: auto;
+    color: #0451A4;
+    
   }
-
+  
   img{
+    display: flex;
     width: 80px;
     margin: auto;
+    margin-bottom: -10px;
+
   }
 
-  p{
-    padding: 5px;
+  p{ 
+    display: flex;
     margin: auto;
+    padding: 15px;
     text-align: center;
+    justify-content: center;
   }
- 
-`;
+
+  `;
+
+  export const CardText = styled.div`
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  align-items: flex-start;
+  `;
