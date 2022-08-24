@@ -6,6 +6,12 @@ export const Container = styled.div`
   max-width: 1920px;
   padding: 20px;  
   flex-wrap: wrap;
+  cursor: pointer;
+
+  >:hover{
+    background-color: #d9d9da;
+
+  }
 `;
 
 export const Section = styled.div`
@@ -29,13 +35,14 @@ h3{
 export const CardStyle = styled.div`
   display: flex;
   flex-direction: column;
-
   background-color: #F1F1F1;
-  max-width: 300px;
+  max-width: 260px;
   min-height: 300px;
   padding: 2rem;
   margin:2px;
   border-radius: 5px;
+
+
   
 
   h4{
