@@ -24,7 +24,7 @@ export const Tipograf = styled.div`
   h3 {
     text-align: center;   
     font-weight: 900;
-    line-height: 0px;
+    line-height: 40px;
     font-size: 2.2em;
     font-family: 'Roboto', sans-serif;
   }
