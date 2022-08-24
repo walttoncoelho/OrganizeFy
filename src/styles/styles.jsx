@@ -12,8 +12,7 @@ export const Tipograf = styled.div`
 
 
   h2 {
-    text-align: center;
-    
+    text-align: center;    
     font-weight: 900;
     line-height: 50px;
     letter-spacing: -0.2rem;
@@ -31,8 +30,7 @@ export const Tipograf = styled.div`
   }
 
   h4 {
-    text-align: center;
-    
+    text-align: center;    
     font-weight: 900;
     line-height: 20px;
     font-size: 1.5em;
@@ -40,16 +38,14 @@ export const Tipograf = styled.div`
   }
 
   h5 {
-    text-align: center;
-   
+    text-align: center;   
     font-weight: 900;
     line-height: 20px;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
   }
 
-  p {
-   
+  p {   
     font-size: 1em;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;

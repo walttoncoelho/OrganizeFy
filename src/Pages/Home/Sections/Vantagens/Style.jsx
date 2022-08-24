@@ -5,6 +5,7 @@ export const Container = styled.div`
   margin: auto;
   max-width: 1920px;
   padding: 20px;  
+  flex-wrap: wrap;
 `;
 
 export const Section = styled.div`

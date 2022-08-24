@@ -59,7 +59,7 @@ export const CardStyle = styled.div`
     box-shadow: #110808;
     border: solid 2px #f3f3f36e;
     border-radius: 100%;
-    padding: 2px;
+    
   }
 
   p{

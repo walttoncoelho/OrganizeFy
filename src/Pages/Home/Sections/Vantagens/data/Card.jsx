@@ -9,7 +9,6 @@ export default function Card() {
     {data.map((item) =>(
       <>
       <CardStyle key={item.id}>
-
       <img src={item.img} alt={item.img_alt} />
       <h4>{item.title}</h4>
       <p>{item.description}</p>
@@ -17,7 +16,6 @@ export default function Card() {
       </>
 ))}
 </Container>
-
     </>
   )
 }
