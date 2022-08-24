@@ -17,6 +17,10 @@ export const Grid = styled.div`
     height: 100%;
     padding: 10px;
     margin-left: 25px;
+
+    @media screen and (max-width: 770px) {
+      margin-bottom: 20px;      
+    }
   }
 `;
 

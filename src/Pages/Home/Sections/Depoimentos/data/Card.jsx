@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardStyle, Container } from '../Style'
+import { CardStyle, Container, Description } from '../Style'
 import data from './data'
 
 export default function Card() {
@@ -11,9 +11,11 @@ export default function Card() {
       <>
     <CardStyle key={item.id} >
       <img src={item.img} alt={item.img_alt} />
-      <h4>{item.nome}</h4>
+      <h4> {item.nome}</h4>
       <p>{item.empresa}</p>
+      <Description>
       <p>{item.description}</p>
+      </Description>
       <p>{item.solução}</p>
 
       </CardStyle>

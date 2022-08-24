@@ -10,7 +10,7 @@ export default function Depoimentos() {
       <Section>
        <br/>
         <h3>
-          Nossos clientes podem falar melhor da Organizefy!
+          | Nossos clientes podem falar melhor da Organizefy!
         </h3>
         <Card />
       </Section>

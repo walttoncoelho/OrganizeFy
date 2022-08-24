@@ -30,5 +30,11 @@ export const Button = styled.div`
   }
 
   }
+
+  @media screen and (max-width: 770px) {    
+    display: flex;
+    margin: auto;   
+       
+    }
   
 `;

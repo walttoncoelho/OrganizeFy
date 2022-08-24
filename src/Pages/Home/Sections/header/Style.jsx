@@ -10,6 +10,11 @@ export const Container = styled.div`
   margin-top: -18px;
   align-items: flex-start;
   justify-content: flex-start;
+
+
+  @media screen and (max-width: 770px) {
+    
+   }
 `;
 
   export const Grid1 = styled.div`
@@ -30,5 +35,16 @@ export const Container = styled.div`
   p{
     color: #fff;
   }
+
+  @media screen and (max-width: 770px) {
+      margin-top: -10px;
+       margin-left: 10px;
+       padding: 10px; 
+   
+       h1{
+         text-align: center;
+       }
+    }
+
 
 `;
