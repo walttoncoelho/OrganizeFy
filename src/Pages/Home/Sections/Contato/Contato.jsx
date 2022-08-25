@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Formik, Field } from 'formik'
 import './Style'
-import { Background, Container, FildForm, Grid01, GridForm, TextField } from './Style';
+import { Background, Container, FildForm, Grid01, TextField } from './Style';
 import { Button } from '../../../../components/Button/Button';
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 import './Style.css'
 export default function Contato() {
 
@@ -59,9 +60,10 @@ export default function Contato() {
                   </div>
                   <br />
                   <div className='RadioField'>
-                  <Field name='termo' type='radio' onBlur={props.handleBlur} />                    
+                  <Field name='termo' type='radio' onBlur={props.handleBlur} />    
                   <label className='Box1'>Eu aceito os termos de política de privacidade:</label>
                   </div>
+                  <br/>                
                   <div className='BoxButton'>
                   <button className='Button' type="submit">Enviar</button>
                   </div>
