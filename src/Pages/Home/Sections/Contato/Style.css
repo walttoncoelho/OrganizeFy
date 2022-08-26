@@ -2,13 +2,25 @@
   width: 100%;
   height: 40px;
   border-radius: 9px;
+  border-style: none;
+  text-decoration: none;
+ 
+}
+
+.linkDecoration{
+  text-decoration: none;
+  color: #ffffff; 
 }
 
 .ContainerField {
   display: flex;
   flex-direction: row;
   text-align: start;
+  border-style: none;
 
+}
+.BoxButton{
+  border-style: none;
 }
 
 @media (max-width: 770px) {
@@ -16,9 +28,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-
-
-
+    border-style: none;
   }
 
   @media (max-width: 770px) {
@@ -40,6 +50,7 @@
 
     .BoxButton {
       max-width: 350px;
+      border-style: none;
 
      
     }
@@ -64,18 +75,21 @@
   justify-content: start;
   padding: 4px;
   min-width: 300px;
+  border-style: none;
 }
 
 .FieldWhats {
   max-width: 350px;
   height: 40px;
   border-radius: 9px;
+  border-style: none;
 }
 
 .FieldCidade {
   max-width: 350px;
   height: 40px;
   border-radius: 9px;
+  border-style: none;
 }
 
 .RadioField {
@@ -93,7 +107,6 @@
   margin: auto;
   text-align: start;
   justify-content: start;
-
   margin-left: 5px;
   margin-bottom: -5px;
 }

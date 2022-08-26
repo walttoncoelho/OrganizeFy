@@ -9,7 +9,7 @@ export default function Footer() {
     <>  
     <Container>
     <img src={logoImg} alt="OrganizeFY" />
-    <a href='#'><p>Política de privacidade</p></a>     
+    <a href='https://www.organizefy.com/privacy-policy/pt' target="_blank"><p>Política de privacidade</p></a>     
     </Container>
     </>
   )

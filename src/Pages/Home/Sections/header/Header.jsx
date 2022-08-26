@@ -13,7 +13,9 @@ export default function Header() {
             Otimize o tempo da sua equipe, capture e gerencie documentos com eficiência com a plataforma OrganizeFy.
           </p>
        
-          <Button type="submit"> <p>Falar por WhatsApp</p></Button>
+          <Button>
+          <a  href="https://wa.me/5598984298854?text=Ol%C3%A1+estou+entrando+em+contato+via+Site%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+as+vantagens+do+sistema+OrganizeFy." target="_blank"> <p>Falar por WhatsApp</p></a> 
+          </Button>
         </Grid1>
       </Container>
     </>

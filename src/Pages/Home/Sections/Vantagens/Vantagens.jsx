@@ -7,7 +7,7 @@ export default function Vantagens() {
   return (
     <>
     <Section>      
-    <h3>| Vantagens</h3>
+    <h3 id="vantagens">| Vantagens</h3>
     <Card />
     </Section>
     </>

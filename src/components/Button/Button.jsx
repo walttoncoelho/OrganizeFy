@@ -13,6 +13,10 @@ export const Button = styled.div`
   margin-left: 10px;
   cursor: pointer;
 
+  a{
+    text-decoration: none;
+  }
+
 
   p{
 

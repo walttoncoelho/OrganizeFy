@@ -12,13 +12,16 @@ export default function Contato() {
       <Container>
         <Background>
           <Grid01>
-            <h3>
+            <h3 id="contato">
               | Fale com um especialista
             </h3>
             <p>
               Tire suas dúvidas com um de nossos especialistas em um atenbimento rápido e fácil.
             </p>
-            <Button type="submit"> <p>Falar por WhatsApp</p></Button>
+           
+            <Button > 
+               <a  href="https://wa.me/5598984298854?text=Ol%C3%A1+estou+entrando+em+contato+via+Site%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+as+vantagens+do+sistema+OrganizeFy." target="_blank"> <p>Falar por WhatsApp</p></a>
+            </Button>
           </Grid01>
 
           <Formik
@@ -38,7 +41,12 @@ export default function Contato() {
             {props => (
 
               <FildForm className='Box'>
-                <form onSubmit={props.handleSubmit}>
+                <form action="https://formsubmit.co/olamundoestudio@gmail.com" method="POST">
+                <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:5173/sucesso"
+              ></input>
                   <label className='Box1 paragraf'><p>Nome:</p></label>
                   <Field className='Field' name='name' type='text' onBlur={props.handleBlur} />
                   <label className='Box1 paragraf'><p>E-mail:</p></label>
@@ -47,7 +55,7 @@ export default function Contato() {
                   <div className='GridField'>
                     <TextField>
 
-                  <label className='Box1 paragraf'><p>WhatsApp:</p></label>
+                  <label className='Box1 paragraf' ><p>WhatsApp:</p></label>
                   </TextField>
                   <Field className='FieldWhats' name='whats' type='number' onBlur={props.handleBlur} />
                   </div>
@@ -61,12 +69,18 @@ export default function Contato() {
                   <br />
                   <div className='RadioField'>
                   <Field name='termo' type='radio' onBlur={props.handleBlur} />    
-                  <label className='Box1'>Eu aceito os termos de política de privacidade:</label>
+                  <label className='Box1'>
+                    <a className='linkDecoration' href='https://www.organizefy.com/privacy-policy/pt' target="_blank">
+
+                    Eu aceito os termos de <strong>política de privacidade:</strong>
+                    </a>
+                    </label>
                   </div>
                   <br/>                
                   <div className='BoxButton'>
                   <button className='Button' type="submit">Enviar</button>
                   </div>
+                 
                 </form>
               </FildForm>
             )}

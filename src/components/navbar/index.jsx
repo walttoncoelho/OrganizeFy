@@ -16,19 +16,19 @@ export function Navbar() {
                 <ColorChild >
                   <li>
                  
-                    <a href="home"> COMECE GRÁTIS </a>  
+                    <a href="#contato"> COMECE GRÁTIS </a>  
                                  
                   </li>
                 </ColorChild>
                 <ColorChild >
                   <li>
-                    <a href="sobre"> VANTAGENS </a>
+                    <a href="#vantagens"> VANTAGENS </a>
                   </li>
                 </ColorChild>
 
                 <ColorChild >
                   <li>
-                    <a href="contato"> FALE COM UM ESPECIALISTA </a>
+                    <a href="#contato"> FALE COM UM ESPECIALISTA </a>
                   </li>
                 </ColorChild>
 
