@@ -41,11 +41,11 @@ export default function Contato() {
             {props => (
 
               <FildForm className='Box'>
-                <form action="https://formsubmit.co/olamundoestudio@gmail.com" method="POST">
+                <form action="https://formsubmit.co/testegratisorganizefy@gmail.com" method="POST">
                 <input
                 type="hidden"
                 name="_next"
-                value="http://localhost:5173/sucesso"
+                value="http:/testegratis-organizefy.com/sucesso"
               ></input>
                   <label className='Box1 paragraf'><p>Nome:</p></label>
                   <Field className='Field' name='name' type='text' onBlur={props.handleBlur} />
