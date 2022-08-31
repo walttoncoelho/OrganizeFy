@@ -45,7 +45,7 @@ export default function Contato() {
                 <input
                 type="hidden"
                 name="_next"
-                value="https://testegratis-organizefy.com/sucesso"
+                value="https://testegratis-organizefy.com/sucesso/index.html"
               ></input>
                   <label className='Box1 paragraf'><p>Nome:</p></label>
                   <Field className='Field' name='name' type='text' onBlur={props.handleBlur} />
