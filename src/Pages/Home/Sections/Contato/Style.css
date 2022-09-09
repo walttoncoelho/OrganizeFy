@@ -109,6 +109,9 @@
   justify-content: start;
   margin-left: 5px;
   margin-bottom: -5px;
+  border-radius: 50px;
+  height: 35px;
+  width:300px;
 }
 
 

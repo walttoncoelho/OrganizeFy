@@ -1,11 +1,50 @@
-import React, { useState } from 'react'
-import { Formik, Field } from 'formik'
+import React, { useEffect, useState } from 'react'
 import './Style'
 import { Background, Container, FildForm, Grid01, TextField } from './Style';
 import { Button } from '../../../../components/Button/Button';
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 import './Style.css'
+import { initializeApp } from "firebase/app";
+import { collection, getFirestore, getDocs, addDoc } from "firebase/firestore";
+
+const firebaseApp = initializeApp ({
+  apiKey: "AIzaSyCDjhqQWSLkjc4PI0lmL7H_au94Fb541VM",
+  authDomain: "organizefy-a375d.firebaseapp.com",
+  projectId: "organizefy-a375d",
+  //----->
+  storageBucket: "organizefy-a375d.appspot.com",
+  messagingSenderId: "684811116111",
+  appId: "1:684811116111:web:cd8568086626dd5afad43a",
+  measurementId: "G-2XLC8GKM3Z"
+});
+
+
 export default function Contato() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [whatsapp, setWhats] = useState("");
+
+
+  const db = getFirestore(firebaseApp);
+  const userCollectionRef = collection(db, "contact")
+
+  async function criateContact() {
+    console.log({name, email, whatsapp} )
+    const user = await addDoc(userCollectionRef, {
+      name, email, whatsapp,
+    });
+    console.log(user);
+  }
+
+  useEffect(() =>{
+    const getContact = async () => {
+      const data = await getDocs(userCollectionRef)
+    /*   console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id}))); */
+      setContact(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+
+    };
+    getContact();
+  },[]);
 
   return (
     <>
@@ -24,68 +63,41 @@ export default function Contato() {
             </Button>
           </Grid01>
 
-          <Formik
-            initialValues={{
-              name: '',
-              email: '',
-              whats: '',
-              cidade: '',
-            }}
+          <FildForm>
 
-            onSubmit={async (values) => {
-              await new Promise((resolve) => setTimeout(resolve, 500));
-              alert(JSON.stringify(values, null, 2));
-            }}
-          >
+          <div className='Box'>
+      <input 
+      className='Box1 paragraf'
+      type="text" 
+      placeholder='Nome' 
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      /> <br/>
+      <input
+      className='Box1 paragraf'
+      type="text"
+      placeholder='Email'
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      /><br/>
+      <input
+      className='Box1 paragraf'
+      type="number"
+      placeholder='WhatsApp'
+      value={whatsapp}
+      onChange={(e) => setWhats(e.target.value)}
+      /><br/>
 
-            {props => (
 
-              <FildForm className='Box'>
-                <form action="https://formsubmit.co/testegratisorganizefy@gmail.com" method="POST">
-                <input
-                type="hidden"
-                name="_next"
-                value="https://sucesso.netlify.app/"
-              ></input>
-                  <label className='Box1 paragraf'><p>Nome:</p></label>
-                  <Field className='Field' name='name' type='text' onBlur={props.handleBlur} />
-                  <label className='Box1 paragraf'><p>E-mail:</p></label>
-                  <Field className='Field' name='email' type='email' onBlur={props.handleBlur} />
-                  <div className='ContainerField'>
-                  <div className='GridField'>
-                    <TextField>
+      <button className='Button' onClick={criateContact}> Enviar</button>
 
-                  <label className='Box1 paragraf' ><p>WhatsApp:</p></label>
-                  </TextField>
-                  <Field className='FieldWhats' name='whats' type='number' onBlur={props.handleBlur} />
-                  </div>
-                  <div className='GridField'>
-                  <TextField>
-                  <label className='Box1 paragraf'><p>Cidade:</p></label>
-                  </TextField>
-                  <Field className='FieldCidade' name='cidade' type='text' onBlur={props.handleBlur} />
-                  </div>
-                  </div>
-                  <br />
-                  <div className='RadioField'>
-                  <Field name='termo' type='radio' onBlur={props.handleBlur} />    
-                  <label className='Box1'>
-                    <a className='linkDecoration' href='https://www.organizefy.com/privacy-policy/pt' target="_blank">
 
-                    Eu aceito os termos de <strong>política de privacidade:</strong>
-                    </a>
-                    </label>
-                  </div>
-                  <br/>                
-                  <div className='BoxButton'>
-                  <button className='Button' type="submit">Enviar</button>
-                  </div>
-                 
-                </form>
-              </FildForm>
-            )}
+   
 
-          </Formik>
+    </div>
+      </FildForm>
+
+
         </Background>
       </Container>
     </>
